@@ -1,0 +1,122 @@
+*{
+  box-sizing: border-box;
+  }
+
+h1{
+  text-align: center;
+  margin: 10px;
+  padding: 30px;
+
+}
+
+
+/*Clase de las cajas principal*/
+  
+ .bl{
+  background-color: #fee2b3; 
+  border: 1px solid black;
+  margin: 10px 10px;
+  width: 430px;
+  height: 200px;
+  position: relative;
+  float: left;
+
+  }
+
+/* Clase bloque para parrafo chicken, beef, fish*/
+.sub{
+  
+  text-align: center;
+  border: 1px solid black;
+  margin: auto;
+  width:65px;
+  height: 30px; 
+  padding: 5px;
+  float: right;
+}
+
+/* parrafo random P*/
+p{
+  color: #ffffdd;
+  text-align: justify;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+  float: left;
+  
+}
+
+/*ID para color de parrafo chicken, beef, fish*/
+#b1{
+  background-color: #99b898;
+} 
+
+#b2{
+  background-color: #ffa931;
+}
+
+#b3{
+  background-color: #84a9ac;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 992px){
+  .blA, .blB,.blC{
+
+  background-color: #848ccf;
+  float: left;
+  width:31%;
+  }
+ 
+
+}
+
+
+/*AND*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .blA, .blB{
+  width:47%; 
+  background-color: #62760c;
+  
+  }
+
+  .blC{
+  background-color: #62760c;
+  width:96%; 
+  float: left;
+  clear: both;
+  
+  }
+}
+
+@media (max-width: 767px){
+
+.blA, .blB, .blC{
+  float:none;
+  clear: both;
+  width: 95%;
+}
+
+
+
+
+
+ /*OR
+@media (max-width: 768px) , (min-width: 991px) {
+  
+ }
+
+
+
+
+@media (orientation: portrait){
+
+}
+@media screen {
+
+}
+@media print {
+
+}*/
