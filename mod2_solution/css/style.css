@@ -1,32 +1,43 @@
 *{
   box-sizing: border-box;
-  margin-left:20px;
-  padding: 0px;
+
   }
 
 body{
     font-family: Garamond, Candara, sans-serif;
     background-color: #96bb7c; 
+   
     }
 
 h1{
     color: #f5f5f5;
     text-align: center;
-    font-size: 175%
+    font-size: 175%;
     margin: 10px;
     padding: 30px;
-
   }
 
 /*------ Class-----*/
+
+.BL{ 
+  margin: 0px;
+  width: 100% 
+  padding: auto;
+  float: left;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-content: center;
+  }
+
+
  .bloque{
   background-color: #eebb4d; 
   border: 3px solid #649d66;
-  width: 430px;
-  height: 250px;
-  margin: 10px;
-  position: relative;
+  margin:10px;
+  padding: 0px;
   float: left;
+  width:300px;
   }
 
 .subloque1{
@@ -37,8 +48,8 @@ h1{
   width:70px;
   height: 35px; 
   padding: 5px;
-  margin: auto;
   float: right;
+
 }
 
 
@@ -57,46 +68,43 @@ h1{
 .subloque2{
   color: black;
   text-align: justify;
-  /*border: 1px solid black;*/
-  margin: 10px 5px 15px 5px;
-  padding: 20px;
-  float: left; 
+  margin-top: 40px;
+  padding: 15px;
 }
 
-/* Media Queries */
+/* Media Queries*/
 
 @media (min-width: 992px){
-  .bloque1, .bloque2,.bloque3{
-  overflow: auto;
-  float: left;
-  width:31%;
+  .BL, .bloque1, .bloque2,.bloque3{
+  width: 100%;
   }
 }
 
 
-/*AND*/
 @media (min-width: 768px) and (max-width: 991px) {
-  .bloque1, .bloque2{
-  overflow: auto;
-  width:47%; 
+ 
+  .BL{
+    flex-flow: row wrap;
+  }
+  .bloque1{
+  width:47.3%;   
+  }
+
+  .bloque2{
+  width:47.3%;   
   }
 
   .bloque3{
-  width:96%; 
-  overflow: auto;
-  float: left;
-  clear: both;
-  
+  width: 100%
   }
 }
 
 @media (max-width: 767px){
 
-.bloque1, .bloque2, .bloque3{
+.BL, .bloque1, .bloque2, .bloque3{
+  width: 100%;
+  margin-left: 0;
+  flex-flow: column;
   overflow: auto;
-  float:none;
-  clear: both;
-  width: 95%;
   }
 }
-
