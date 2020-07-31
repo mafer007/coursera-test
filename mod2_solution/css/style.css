@@ -1,16 +1,14 @@
 *{
-  box-sizing: border-box;
-
+  box-sizing: border-box;       
   }
 
 body{
     font-family: Garamond, Candara, sans-serif;
-    background-color: #96bb7c; 
-   
+    background-color: #f0dd92; 
     }
 
 h1{
-    color: #f5f5f5;
+    color: black;
     text-align: center;
     font-size: 175%;
     margin: 10px;
@@ -20,63 +18,64 @@ h1{
 /*------ Class-----*/
 
 .BL{ 
-  margin: 0px;
-  width: 100% 
-  padding: auto;
-  float: left;
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
-  align-content: center;
+    position: relative;
+    margin: 0px;
+    width: 100% 
+    padding: auto;
+    float: left;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    clear: left;
   }
 
 
  .bloque{
-  background-color: #eebb4d; 
-  border: 3px solid #649d66;
-  margin:10px;
-  padding: 0px;
-  float: left;
-  width:300px;
+    position: relative;
+    background-color: #83b582; 
+    border: 3px solid #f6d365;
+    margin:10px;
+    padding: 0px;
+    float: left;
   }
 
 .subloque1{
-  color: white;
-  text-align: center;
-  font-size: 18px;
-  border: 3px solid #649d66;
-  width:70px;
-  height: 35px; 
-  padding: 5px;
-  float: right;
-
+    color: white;
+    text-align: center;
+    font-size: 125%;
+    width:90px;
+    height: 35px; 
+    padding: 5px;
+    float: right;
 }
 
-
+/*-----ID------*/
 #sb1{
-  background-color: #cf7500;
+    background-color: #207561;
 } 
 
 #sb2{
-  background-color: #c70039;
+    background-color: #cd3f3e;
 }
 
 #sb3{
-  background-color: #01a9b4;
+    background-color: #216583;
 }
 
 .subloque2{
-  color: black;
-  text-align: justify;
-  margin-top: 40px;
-  padding: 15px;
+    color: white;
+    text-align: justify;
+    font-size: 125%;
+    margin-top: 40px;
+    padding: 15px;
 }
 
 /* Media Queries*/
 
 @media (min-width: 992px){
   .BL, .bloque1, .bloque2,.bloque3{
-  width: 100%;
+    width: 100%;
   }
 }
 
@@ -87,24 +86,24 @@ h1{
     flex-flow: row wrap;
   }
   .bloque1{
-  width:47.3%;   
+    width:47.3%;   
   }
 
   .bloque2{
-  width:47.3%;   
+    width:47.3%;   
   }
 
   .bloque3{
-  width: 100%
+    width: 100%
   }
 }
 
 @media (max-width: 767px){
 
 .BL, .bloque1, .bloque2, .bloque3{
-  width: 100%;
-  margin-left: 0;
-  flex-flow: column;
-  overflow: auto;
+    width: 100%;
+    margin-left: 0;
+    flex-flow: column;
+    overflow: auto;
   }
 }
