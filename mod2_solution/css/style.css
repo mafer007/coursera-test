@@ -4,7 +4,7 @@
 
 body{
     font-family: Garamond, Candara, sans-serif;
-    background-color: #f0dd92; 
+    background-color: #e2c275; 
     }
 
 h1{
@@ -33,8 +33,8 @@ h1{
 
  .bloque{
     position: relative;
-    background-color: #83b582; 
-    border: 3px solid #f6d365;
+    background-color: #445c3c; 
+    border: 1px solid black;
     margin:10px;
     padding: 0px;
     float: left;
@@ -42,6 +42,7 @@ h1{
 
 .subloque1{
     color: white;
+    border: 1px solid black;
     text-align: center;
     font-size: 125%;
     width:90px;
@@ -52,15 +53,15 @@ h1{
 
 /*-----ID------*/
 #sb1{
-    background-color: #207561;
+    background-color: #fa7d09;
 } 
 
 #sb2{
-    background-color: #cd3f3e;
+    background-color: #fa1616;
 }
 
 #sb3{
-    background-color: #216583;
+    background-color: #0e9aa7;
 }
 
 .subloque2{
@@ -85,14 +86,10 @@ h1{
   .BL{
     flex-flow: row wrap;
   }
-  .bloque1{
-    width:47.3%;   
+  .bloque1, .bloque{
+    width:47%; 
+    padding: 0; 
   }
-
-  .bloque2{
-    width:47.3%;   
-  }
-
   .bloque3{
     width: 100%
   }
