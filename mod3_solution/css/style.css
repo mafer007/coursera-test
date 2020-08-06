@@ -5,20 +5,22 @@ body{
 
 }
 h1{
+	margin: 0px;
+}
+h2{
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  
 }
 .navbar {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 #header-nav{
   border-radius: 0;
   border: 0;
   background-color: red;
 }
-navbar-toggler{
-	float: left;
-}
+
 
 .chicken, .beef, .fish{
   text-align: center;
@@ -38,6 +40,7 @@ navbar-toggler{
 .container-fluid{
 
 }
+
 .C, .B, .F{
   padding-bottom: 50px;
 }
