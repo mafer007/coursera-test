@@ -1,0 +1,54 @@
+body{
+  background: #eeeeee;
+  padding-bottom: 20px;
+  text-align: justify;
+
+}
+h1{
+  text-align: center;
+  padding: 20px;
+}
+.navbar {
+  margin-bottom: 20px;
+}
+#header-nav{
+  border-radius: 0;
+  border: 0;
+  background-color: red;
+}
+navbar-toggler{
+	float: left;
+}
+
+.chicken, .beef, .fish{
+  text-align: center;
+  font-size: 120%;
+  padding: 10px;
+  margin: 10px;
+ }
+
+.chickentext, .beeftext, .fishtext{
+  padding: 10px;
+  margin: 10px;
+}
+
+
+
+
+.container-fluid{
+
+}
+.C, .B, .F{
+  padding-bottom: 50px;
+}
+
+.row{
+	margin-bottom: 30px;
+  	padding: 10px;
+}
+.row > div {
+	border: 2px solid black;
+	background-color: gray;
+	padding-bottom: 30px;
+}
+
