@@ -1,5 +1,5 @@
 body{
-  background: #eeeeee;
+  background: #d9adad;
   padding-bottom: 20px;
   text-align: justify;
 
@@ -18,31 +18,64 @@ h2{
 #header-nav{
   border-radius: 0;
   border: 0;
-  background-color: red;
+  background-color: white;
 }
 
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
 
 .chicken, .beef, .fish{
   text-align: center;
   font-size: 120%;
-  padding: 10px;
-  margin: 10px;
+  padding: 0px;
+  margin: 0px;
  }
 
 .chickentext, .beeftext, .fishtext{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
   padding: 10px;
-  margin: 10px;
-}
-
-
-
-
-.container-fluid{
-
+  margin: 0px;
 }
 
 .C, .B, .F{
-  padding-bottom: 50px;
+  padding: 10px 10px;
 }
 
 .row{
@@ -50,8 +83,6 @@ h2{
   	padding: 10px;
 }
 .row > div {
-	border: 2px solid black;
-	background-color: gray;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 }
 
