@@ -1,15 +1,13 @@
 body{
-  background: #d9adad;
+  background: #0c7b93;
   padding-bottom: 20px;
   text-align: justify;
+  font-family: 'Arimo', sans-serif;
+  font-family: 'Lato', sans-serif;
 
 }
 
-h2{
-  text-align: center;
-  padding: 10px;
-  
-}
+/* GRID */
 .row{
   margin-bottom: 30px;
   padding: 5px;
@@ -19,17 +17,18 @@ h2{
 }
 .navbar {
   margin-bottom: 10px;
+  padding: 10px;
 }
 #header-nav{
   border-radius: 0;
   border: 0;
-  background-color: white;
+  background-color: #222831;
 }
 
+/* NAV, NAVBAR */
 .navbar-brand h1 { 
-  color: black;
+  color: white;
   font-size: 1.5em;
-  text-transform: uppercase;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
   margin-top: 0;
@@ -39,25 +38,17 @@ h2{
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-.navbar-brand p { 
-  color: #000;
-  text-transform: uppercase;
-  font-size: .7em;
-  margin-top: 15px;
-}
-.navbar-brand p span { 
-  vertical-align: middle;
-}
 
 #nav-list {
   margin-top: 10px;
 }
+
 #nav-list a {
-  color: #951C49;
+  color: white;
   text-align: center;
 }
 #nav-list a:hover {
-  background: #E7E7E7;
+ background: gray;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
@@ -65,25 +56,37 @@ h2{
 }
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: -30px;
+  margin-top: -10px;
 }
+
+h2{
+  text-align: center;
+  color: white;
+  padding: 10px;
+  
+}
+
+/* CLASS, SECTION */
 .chicken, .beef, .fish{
   text-align: center;
-  font-size: 120%;
+  color: black;
+  font-size: 125%;
   padding: 10px;
   margin: 5px;
  }
 
 .chickentext, .beeftext, .fishtext{
-  background-color: white;
+  background-color: #e5dfdf;
+  color: black;
+  font-size: 1.3em;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
   margin: 5px;
 }
 /* END HEADER */
 
-
+/* MEDIA QUERIES */
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 
@@ -101,33 +104,23 @@ h2{
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-  /* Header */
-  .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
-  }
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
-  }
-  .navbar-brand p { /* Kosher cert */
-    font-size: .6em;
-    margin-top: 12px;
-  }
-  .navbar-brand p img { /* Star-K */
-    height: 20px;
-  }
 
-  #collapsable-nav a { /* Collapsed nav menu text */
+    /* Header */
+  .navbar-brand {
+    padding-top: 10px;  
+    height: 5px;
+  }
+  .navbar-brand h1 { 
+    padding-top: 10px; 
+  }
+  
+
+  #colapsado a { 
     font-size: 1.2em;
   }
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
+  #colapsado a span { 
     font-size: 1em;
     margin-right: 5px;
   }
-
-  
-  
-  /* End Header */
 
 }
