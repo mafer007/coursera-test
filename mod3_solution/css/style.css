@@ -4,13 +4,18 @@ body{
   text-align: justify;
 
 }
-h1{
-	margin: 0px;
-}
+
 h2{
   text-align: center;
   padding: 10px;
   
+}
+.row{
+  margin-bottom: 30px;
+  padding: 5px;
+}
+.row > div {
+  padding-bottom: 10px;
 }
 .navbar {
   margin-bottom: 10px;
@@ -21,9 +26,8 @@ h2{
   background-color: white;
 }
 
-.navbar-brand h1 { /* Restaurant name */
-  font-family: 'Lora', serif;
-  color: #557c3e;
+.navbar-brand h1 { 
+  color: black;
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
@@ -35,13 +39,13 @@ h2{
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-.navbar-brand p { /* Kosher cert */
+.navbar-brand p { 
   color: #000;
   text-transform: uppercase;
   font-size: .7em;
   margin-top: 15px;
 }
-.navbar-brand p span { /* Star-K */
+.navbar-brand p span { 
   vertical-align: middle;
 }
 
@@ -55,15 +59,19 @@ h2{
 #nav-list a:hover {
   background: #E7E7E7;
 }
-#nav-list a span {
-  font-size: 1.8em;
-}
 
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid gray;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
 .chicken, .beef, .fish{
   text-align: center;
   font-size: 120%;
-  padding: 0px;
-  margin: 0px;
+  padding: 10px;
+  margin: 5px;
  }
 
 .chickentext, .beeftext, .fishtext{
@@ -71,18 +79,55 @@ h2{
   border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
-  margin: 0px;
+  margin: 5px;
+}
+/* END HEADER */
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
 }
 
-.C, .B, .F{
-  padding: 10px 10px;
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  
 }
 
-.row{
-	margin-bottom: 30px;
-  	padding: 10px;
-}
-.row > div {
-	padding-bottom: 10px;
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
 }
 
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  
+  
+  /* End Header */
+
+}
