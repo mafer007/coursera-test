@@ -60,7 +60,6 @@ body{
 }
 
 h2{
-  text-align: center;
   color: white;
   padding: 10px;
   
@@ -68,7 +67,6 @@ h2{
 
 /* CLASS, SECTION */
 .chicken, .beef, .fish{
-  text-align: center;
   color: black;
   font-size: 125%;
   padding: 10px;
